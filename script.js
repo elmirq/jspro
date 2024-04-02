@@ -81,6 +81,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 bg.style.backgroundImage = 'url(img/bg.jpg)'
                 bg.style.backgroundSize = 'cover'
                 bg.style.backgroundPosition = 'top';
+                aciklama.innerHTML = `YAD PLANETDƏ TƏK BAŞINA YAŞAYAN KOSMANAVT HAQQINDA`;
+
             }
             if (newFilm.length, newGenre.length < 1) {
 

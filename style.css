@@ -315,28 +315,28 @@ animation-iteration-count: infinite;
 {
     animation-name: adding_input;
     animation-duration: 0.8s;
-    transform: scale(1.1);
+    transform: scale(1);
 }
 @keyframes adding_input {
-    0%{}
-    25%{transform: scale(1);}
+    0%{transform: scale(1);}
+    25%{transform: scale(1.1);}
     /* 50%{transform: scale(1.2);}  */
     /* 75%{transform: scale(1.3);} */
-    100%{transform: scale(1.1);}   
+    100%{transform: scale(1);}   
 }
 
 .adding_input_genre:hover
 {
     animation-name: adding_input_genre;
     animation-duration: 0.8s;
-    transform: scale(1.1);
+    transform: scale(1);
 }
 @keyframes adding_input_genre {
-    0%{}
-    25%{transform: scale(1);}
+    0%{transform: scale(1);}
+    25%{transform: scale(1.1);}
     /* 50%{transform: scale(1.2);}  */
     /* 75%{transform: scale(1.3);} */
-    100%{transform: scale(1.1);}   
+    100%{transform: scale(1);}   
 }
 
 .checkbox {

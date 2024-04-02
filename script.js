@@ -51,6 +51,7 @@ window.addEventListener("DOMContentLoaded", () => {
         if (addInputGenre.value, addInput.value == 0) {
             addInput.style.borderColor = "red";
             addInputGenre.style.borderColor = "red";
+            alert('Xəta! Qırmızı ilə işarə edilmiş qutuları doldurun.')
         }
         else {
             addInput.style.borderColor = "#8ca3ff";

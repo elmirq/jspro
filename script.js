@@ -128,3 +128,5 @@ window.addEventListener("DOMContentLoaded", () => {
     deleteAdv(reklam);
 
 });
+
+// j

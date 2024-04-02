@@ -78,18 +78,22 @@ window.addEventListener("DOMContentLoaded", () => {
             if (newFilm.length, newGenre.length > 0) {
                 sevimliFilm.innerHTML = `${newFilm}`;
                 janr.innerHTML = `${newGenre}`;
+                bg.style.backgroundImage = 'url(img/bg.jpg)'
+                bg.style.backgroundSize = 'cover'
+                bg.style.backgroundPosition = 'top';
             }
             if (newFilm.length, newGenre.length < 1) {
 
 
             }
+            if (newFilm == "evde tek") {
+                bg.style.backgroundImage = 'url(img/evdetek.jpg)';
+                bg.style.backgroundSize = 'auto';
+                bg.style.backgroundPosition = 'center';
+                aciklama.innerHTML = `Əvvəl "HTML-in" dadını çıxaran Kevin daha sonra şayiələrə görə bir çox "Web developerin" onun ucbatından öz canına qəst ettiyi deyilən kodlaştırma dili JavaScripti görür və bu onu qorxudur.`;
+            }
         }
-        if (newFilm == "evde tek") {
-            bg.style.backgroundImage = 'url(img/evdetek.jpg)';
-            bg.style.backgroundSize = 'auto';
-            bg.style.backgroundPosition = 'center';
-            aciklama.innerHTML = `Əvvəl "HTML-in" dadını çıxaran Kevin daha sonra şayiələrə görə bir çox "Web developerin" onun ucbatından öz canına qəst ettiyi deyilən kodlaştırma dili JavaScripti görür və bu onu qorxudur.`;
-        }
+
         e.target.reset();
 
 

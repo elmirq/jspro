@@ -84,7 +84,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
             }
         }
-        if (newFilm == "Evde tek") {
+        if (newFilm = "Evde tek") {
             bg.style.backgroundImage = 'url(img/evdetek.jpg)';
             bg.style.backgroundSize = 'auto';
             bg.style.backgroundPosition = 'center';

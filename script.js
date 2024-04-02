@@ -22,7 +22,11 @@ window.addEventListener("DOMContentLoaded", () => {
     const checkBox = document.querySelector('[type="checkbox"]');
     const sevimliFilm = document.querySelector('.promo_title');
     const logo = document.querySelector('.header_logo');
+    const sekil = document.createElement("img");
+    const aciklama = document.querySelector('.promo_descr')
     // const sil = document.querySelectorAll('.delete');
+
+
 
     const deleteAdv = (del) => {
         del.forEach(e => {
@@ -48,12 +52,14 @@ window.addEventListener("DOMContentLoaded", () => {
             addInput.style.borderColor = "red";
             addInputGenre.style.borderColor = "red";
         }
-        else{ addInput.style.borderColor = "#8ca3ff";
-        addInputGenre.style.borderColor = "#8ca3ff";
-    if (favorite) {
-        addInput.style.borderColor = "green";
-        addInputGenre.style.borderColor = "green";
-    } }
+        else {
+            addInput.style.borderColor = "#8ca3ff";
+            addInputGenre.style.borderColor = "#8ca3ff";
+            if (favorite) {
+                addInput.style.borderColor = "green";
+                addInputGenre.style.borderColor = "green";
+            }
+        }
 
         if (newFilm) {
             if (newFilm.length >= 15) {
@@ -64,31 +70,30 @@ window.addEventListener("DOMContentLoaded", () => {
             createMovieList(movieDB.movies, kino);
             arrSort(movieDB.movies);
         }
-        
+
         if (favorite) {
             console.log(`${newFilm} sevimliye elave edildi`);
 
-            if (newFilm.length,newGenre.length > 0) {
+            if (newFilm.length, newGenre.length > 0) {
                 sevimliFilm.innerHTML = `${newFilm}`;
                 janr.innerHTML = `${newGenre}`;
-            }  
-            if (newFilm.length,newGenre.length < 1) {
-                
-                
             }
+            if (newFilm.length, newGenre.length < 1) {
+
+
+            }
+        }
+        if (newFilm == "Evde tek") {
+            bg.style.backgroundImage = 'url(img/evdetek.jpg)';
+            bg.style.backgroundSize = 'auto';
+            bg.style.backgroundPosition = 'center';
+            aciklama.innerHTML = `Əvvəl "HTML-in" dadını çıxaran Kevin daha sonra şayiələrə görə bir çox "Web developerin" onun ucbatından öz canına qəst ettiyi deyilən kodlaştırma dili JavaScripti görür və bu onu qorxudur.`;
         }
         e.target.reset();
 
 
 
     });
-// logo.addEventListener('click', ()=>{ 
-// document.body.style.backgroundColor = "#1f1f1f";
-// kinoAdlari.style.color = 'white';
-
-
-// })
-
 
     const arrSort = (kino) => {
         kino.sort();
@@ -107,14 +112,14 @@ window.addEventListener("DOMContentLoaded", () => {
         `
         });
 
-     document.querySelectorAll('.delete').forEach((btn, i)=> {
-    btn.addEventListener('click', () =>{
-    btn.parentElement.remove();
-    movieDB.movies.splice(i, 1);
-    createMovieList(kinoYarat, anaElement);
-    })
-    
-    });
+        document.querySelectorAll('.delete').forEach((btn, i) => {
+            btn.addEventListener('click', () => {
+                btn.parentElement.remove();
+                movieDB.movies.splice(i, 1);
+                createMovieList(kinoYarat, anaElement);
+            })
+
+        });
     }
 
     createMovieList(movieDB.movies, kino);

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Movie DB</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_search">
+            <form action="#">
+                <input type="text" placeholder="Axtar">
+            </form>
+        </div>
+        <div class="header_logo">
+            <img src="icons/logo.png" alt="logo" width="100px">
+        </div>
+    </header>
+    <main class="promo">
+        <div class="promo_menu">
+            <nav class="promo_menu-list">
+                <ul>
+                    <li><a class="promo_menu-item promo_menu-item_active" href="#">Kinolar</a></li>
+                    <li><a class="promo_menu-item" href="#">Seriallar</a></li>
+                    <li><a class="promo_menu-item" href="#">Cizgi filmi</a></li>
+                    <li><a class="promo_menu-item" href="#">Kliplər</a></li>
+                    <li><a class="promo_menu-item" href="#">Treylerlər</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="promo_content">
+            <div class="promo_bg">
+                <div class="promo_genre">Komediya</div>
+                <div class="promo_title">MARSLI</div>
+                <div class="promo_descr">YAD PLANETDƏ TƏK BAŞINA YAŞAYAN KOSMANAVT HAQQINDA</div>
+                <div class="promo_ratings">
+                    <span>IMDb: 8.0</span>
+                    <span>Netflix: 7.7</span>
+                </div>
+            </div>
+            <div class="promo_interactive">
+                <div>
+                    <div class="promo_interactive-title">Baxılmış kinolar</div>
+                    <ul class="promo_interactive-list">
+                        <li class="promo_interactive-item">Rembo
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo_interactive-item">LOST
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo_interactive-item">Vikings
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo_interactive-item">KON TIKI
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo_interactive-item">Black Hawk Down
+                            <div class="delete"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <form class="add">
+                        <div class="promo_interactive-title">Yeni film əlavə edin</div>
+                        <span>Filmin adını daxil edin</span>
+                        <input class="adding_input" type="text" placeholder="Artıq baxılıb...?">
+                        <span>Filmin janrın daxil</span>
+                        <input class="adding_input_genre" type="text" placeholder="Janr...?">
+                        <span>Sevimli edək?</span>
+                           <label class="checkbox path">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 21 21">
+                                <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                            </svg>
+                        </label>
+                        <button>Təsdiq et</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="promo_adv">
+            <div class="promo_adv-title">Sponsor reklamları</div>
+            <img src="img/2.png" alt="some picture">
+            <img src="img/3.png" alt="some picture">
+            <img src="img/4.png" alt="some picture">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
